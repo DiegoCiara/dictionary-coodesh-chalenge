@@ -4,7 +4,7 @@
 
 ## Tecnologias utilizadas:
 - React Native;
-- Expo Cli;
+- Expo CLI;
 
 O projeto foi criado usando a CLI do expo, devido a facilidade e praicidade em testar o aplicativo.
 
@@ -40,7 +40,7 @@ Para acessar as palavras, é feito um Hook global para entregar as palavras em t
 
 ## Technologies used:
 - React Native;
-- Expo Cli;
+- Expo CLI;
 
 The project was created using the expo CLI, due to the ease and convenience in testing the application.
 
