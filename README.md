@@ -25,7 +25,4 @@ Para acessar as palavras, é feito um Hook global para entregar as palavras em t
 ✅ O usuário deve ser capaz de visitar uma lista com as palavras que já vi anteriormente
 
 
-#### Os requisitos diferenciais do projetos não foram atendidos devido ao tempo de execução do projeto
-
-
 >  This is a challenge by [Coodesh](https://coodesh.com/)
