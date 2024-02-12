@@ -5,6 +5,8 @@ import { useEffect, useState } from "react";
 export const useDictionary = () => {
   const [words, setWords] = useState([]);
   const [history, setHistory] = useState([]);
+  const [favorites, setFavorites] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     async function fetchData() {
@@ -12,8 +14,9 @@ export const useDictionary = () => {
       readStoredData();
     }
     fetchData();
-    fetchHistory()
-  }, []);
+    fetchHistory()    
+    fetchFavorites();
+    }, []);
 
   async function loadWords() {
     try {
@@ -43,7 +46,6 @@ export const useDictionary = () => {
     try {
       const historyJson = await AsyncStorage.getItem('searchHistory');
       const history = historyJson ? JSON.parse(historyJson) : [];
-      console.log(history)        
       const reversedHistory = [...history].reverse();
       setHistory(reversedHistory);
     } catch (error) {
@@ -51,10 +53,24 @@ export const useDictionary = () => {
     }
   };
 
+  const fetchFavorites = async () => {
+    setLoading(true);
+    try {
+      const favoritesJson = await AsyncStorage.getItem('favorites');
+      const favoritesList = favoritesJson ? JSON.parse(favoritesJson) : [];
+      setFavorites(favoritesList);
+    } catch (error) {
+      console.log(error);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return {
     words,
     history,
+    favorites,
+    loading,
     loadWords
   };
 };

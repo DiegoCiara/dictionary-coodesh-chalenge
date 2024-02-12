@@ -31,7 +31,7 @@ const WordsScreen = ({ navigation }) => {
     <>
       <WordsPage style={{ flex: 1 }}>
         <TextField
-          placeholder="Buscar palavra..."
+          placeholder="Search for a word..."
           value={searchTerm}
           onChangeText={setSearchTerm}
         />

@@ -118,7 +118,7 @@ const WordsDetailScreen = ({ route }) => {
               </View>
           </>
         ) : (
-          <Text style={styles.noDetails}>Não foram encontrados detalhes para a palavra.</Text>
+          <Text style={styles.noDetails}>No details found for the word.</Text>
         )}
       </View>
     </ScrollView>

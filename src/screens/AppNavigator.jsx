@@ -48,7 +48,6 @@ function AppNavigator() {
     >
       {ScreensComponents.map((e) => (
         <Stack.Screen name={e.screen}
-
           options={{
             title: e.name,
             headerStyle: {
@@ -64,7 +63,6 @@ function AppNavigator() {
           component={e.component}
         />
       ))}
-      
     </Stack.Navigator>
   );
 }

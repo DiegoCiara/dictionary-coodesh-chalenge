@@ -6,28 +6,12 @@ import { debounce } from 'lodash'; // Certifique-se de instalar o pacote lodash
 import HistoryList from '../ui/components/HistoryList/HistoryList';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import WordsList from '../ui/components/WordsList/WordsList';
+import { useDictionary } from '../services/hooks/dictionaryHook';
 
 const HistoryScreen = ({ navigation }) => {
 
-  const [history, setHistory] = useState([]);
 
-
-  useEffect(() => {
-    fetchHistory();
-  }, []);
-
-
-  const fetchHistory = async () => {
-    try {
-      const historyJson = await AsyncStorage.getItem('searchHistory');
-      const history = historyJson ? JSON.parse(historyJson) : [];  
-      const reversedHistory = [...history].reverse();
-      setHistory(reversedHistory);
-    } catch (error) {
-      console.log(error);
-    }
-  };
-
+  const { history } = useDictionary();
 
   return (
     <>
