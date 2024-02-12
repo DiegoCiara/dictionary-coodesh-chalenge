@@ -8,9 +8,10 @@
 
 O projeto foi criado usando a CLI do expo, devido a facilidade e praicidade em testar o aplicativo.
 
-instale as dependências e rode o projeto:
-yarn
-yarn dev
+
+Instale as dependências e rode o projeto:
+- yarn
+- yarn dev
 
 Para salvar localmente os dados das [Palavras](https://raw.githubusercontent.com/dwyl/english-words/master/words_dictionary.json), é setado logo de início no AsyncStorage onde podemos acessar localmente todas as palavras disponíveis.
 
@@ -27,7 +28,11 @@ Para acessar as palavras, é feito um Hook global para entregar as palavras em t
 
 >  This is a challenge by [Coodesh](https://coodesh.com/)
 
+
+
 #
+
+
 
 # Dictionary
 
@@ -39,11 +44,11 @@ Para acessar as palavras, é feito um Hook global para entregar as palavras em t
 
 The project was created using the expo CLI, due to the ease and convenience in testing the application.
 
+
 Install the dependencies and run the project:
 
-
-yarn
-yarn dev
+- yarn
+- yarn dev
 
 To locally save the data of the [Words](https://raw.githubusercontent.com/dwyl/english-words/master/words_dictionary.json), it is set right at the beginning in AsyncStorage where we can locally access all the available words.
 
