@@ -26,3 +26,35 @@ Para acessar as palavras, é feito um Hook global para entregar as palavras em t
 
 
 >  This is a challenge by [Coodesh](https://coodesh.com/)
+
+#
+
+# Dictionary
+
+### Dictionary project made in React Native using expo CLI
+
+## Technologies used:
+- React Native;
+- Expo Cli;
+
+The project was created using the expo CLI, due to the ease and convenience in testing the application.
+
+Install the dependencies and run the project:
+
+
+yarn
+yarn dev
+
+To locally save the data of the [Words](https://raw.githubusercontent.com/dwyl/english-words/master/words_dictionary.json), it is set right at the beginning in AsyncStorage where we can locally access all the available words.
+
+To access the words, a global Hook is made to deliver the words on all screens that use them [Words, History, and Favorites].
+
+## All the mandatory requirements of the projects have been met:
+
+✅ The user must be able to view a list of words with infinite scrolling
+✅ The user must be able to view a word, meanings, and phonetics
+✅ The user must be able to save the word as favorite
+✅ The user must be able to remove the word as favorite
+✅ The user must be able to visit a list with the words they have seen previously
+
+This is a challenge by Coodesh
