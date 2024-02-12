@@ -57,4 +57,5 @@ To access the words, a global Hook is made to deliver the words on all screens t
 ✅ The user must be able to remove the word as favorite
 ✅ The user must be able to visit a list with the words they have seen previously
 
-This is a challenge by Coodesh
+
+>  This is a challenge by [Coodesh](https://coodesh.com/)
