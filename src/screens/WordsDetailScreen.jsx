@@ -53,7 +53,7 @@ const WordsDetailScreen = ({ route }) => {
       const favArray = favorites ? JSON.parse(favorites) : [];
       setIsFavorite(favArray.includes(word));
     } catch (error) {
-      console.log('Error checking favorite status', error);
+      console.log(error);
     }
   };
 
@@ -69,7 +69,7 @@ const WordsDetailScreen = ({ route }) => {
       await AsyncStorage.setItem('favorites', JSON.stringify(favArray));
       setIsFavorite(!isFavorite);
     } catch (error) {
-      console.log('Error toggling favorite', error);
+      console.log(error);
     }
   };
 

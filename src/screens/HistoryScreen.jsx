@@ -20,8 +20,7 @@ const HistoryScreen = ({ navigation }) => {
   const fetchHistory = async () => {
     try {
       const historyJson = await AsyncStorage.getItem('searchHistory');
-      const history = historyJson ? JSON.parse(historyJson) : [];
-      console.log(history)        
+      const history = historyJson ? JSON.parse(historyJson) : [];  
       const reversedHistory = [...history].reverse();
       setHistory(reversedHistory);
     } catch (error) {

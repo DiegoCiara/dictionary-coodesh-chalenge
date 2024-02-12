@@ -22,7 +22,7 @@ const FavoritesScreen = ({ navigation }) => {
       const favoritesList = favoritesJson ? JSON.parse(favoritesJson) : [];
       setFavorites(favoritesList);
     } catch (error) {
-      console.log('Error fetching favorites', error);
+      console.log(error);
     } finally {
       setLoading(false);
     }
